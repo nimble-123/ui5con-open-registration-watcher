@@ -8,6 +8,7 @@ Clone this repo
 
 ```sh
 git clone git@github.com:nlsltz/ui5con-open-registration-watcher.git
+cd ui5con-open-registration-watcher
 ```
 
 Install dependencies (i am using `yarn` instead of `npm`)
@@ -32,12 +33,19 @@ yarn start
 
 If the registration is open you should see something like this.
 
-![alt text](https://i.imgur.com/HTGjGd1.png "Registration seems to be open")
+![Registration seems to be open](https://i.imgur.com/HTGjGd1.png "Registration seems to be open")
 
 If the registration is not open you should see something like this.
 
-![alt text](https://i.imgur.com/kpdWY8t.png "Registration seems not to be open")
+![Registration seems not to be open](https://i.imgur.com/kpdWY8t.png "Registration seems not to be open")
 
+---
 
+### TODO
 
-Copyright nlsltz <Nils Lutz>
+* Add simple API
+* Add UI consuming the API
+* Bundle as Docker image/container
+
+---
+Copyright © 2018 Nils Lutz
