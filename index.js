@@ -25,7 +25,7 @@ crawl.queue({
       $(aLinks).each(function(i, link) {
         const sLink = $(link).attr('href');
         if (sLink && sLink.search('eventbrite.de') !== -1) {
-          debug($(link).text() + ':\n  ' + $(link).attr('href'));
+          debug($(link).text() + ':\n' + $(link).attr('href'));
           bEventbriteLinkFound = true;
         }
       });
@@ -33,9 +33,9 @@ crawl.queue({
         bRegistrationOpen = true;
       }
       if (bRegistrationOpen && bEventbriteLinkFound) {
-        debug('Registration was found on page');
+        debug('Registration seems to be open!!! :)');
       } else {
-        debug('Registration seems not to be opened till now');
+        debug('Registration seems not to be open :(');
       }
     }
     done();
