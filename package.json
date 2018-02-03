@@ -1,0 +1,8 @@
+{
+  "name": "ui5con-open-registration-watcher",
+  "version": "0.0.1",
+  "description": "A simple website crawler to watch the ui5con website for open registration",
+  "main": "index.js",
+  "author": "nlsltz <info@nilslutz.de>",
+  "license": "MIT"
+}
