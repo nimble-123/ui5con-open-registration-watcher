@@ -24,7 +24,7 @@ crawl.queue({
       let bEventbriteLinkFound = false;
       $(aLinks).each(function(i, link) {
         const sLink = $(link).attr('href');
-        if (sLink.search('eventbrite.de') !== -1) {
+        if (sLink && sLink.search('eventbrite.de') !== -1) {
           debug($(link).text() + ':\n  ' + $(link).attr('href'));
           bEventbriteLinkFound = true;
         }
