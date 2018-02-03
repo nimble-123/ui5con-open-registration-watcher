@@ -3,6 +3,15 @@
   "version": "0.0.1",
   "description": "A simple website crawler to watch the ui5con website for open registration",
   "main": "index.js",
-  "author": "nlsltz <info@nilslutz.de>",
-  "license": "MIT"
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nils Lutz <info@nilslutz.de>",
+  "license": "MIT",
+  "repository": "git@github.com:nlsltz/ui5con-open-registration-watcher.git",
+  "bugs": {
+    "url": "https://github.com/nlsltz/ui5con-open-registration-watcher/issues"
+  },
+  "homepage": "https://github.com/nlsltz/ui5con-open-registration-watcher#readme"
 }
