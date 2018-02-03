@@ -32,11 +32,11 @@ yarn start
 
 If the registration is open you should see something like this.
 
-![alt text](https://imgur.com/a/S8ZlF "Registration seems to be open")
+![alt text](https://i.imgur.com/HTGjGd1.png "Registration seems to be open")
 
 If the registration is not open you should see something like this.
 
-![alt text](https://imgur.com/a/mcYPc "Registration seems not to be open")
+![alt text](https://i.imgur.com/kpdWY8t.png "Registration seems not to be open")
 
 
 
