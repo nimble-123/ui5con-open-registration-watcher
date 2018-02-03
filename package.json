@@ -13,5 +13,11 @@
   "bugs": {
     "url": "https://github.com/nlsltz/ui5con-open-registration-watcher/issues"
   },
-  "homepage": "https://github.com/nlsltz/ui5con-open-registration-watcher#readme"
+  "homepage": "https://github.com/nlsltz/ui5con-open-registration-watcher#readme",
+  "dependencies": {
+    "crawler": "^1.1.2",
+    "debug": "^3.1.0",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2"
+  }
 }
