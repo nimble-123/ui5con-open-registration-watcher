@@ -43,8 +43,6 @@ If the registration is not open you should see something like this.
 
 ### TODO
 
-* Add simple API
-* Add UI consuming the API
 * Bundle as Docker image/container
 
 ---
