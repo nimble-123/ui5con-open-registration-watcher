@@ -18,14 +18,15 @@ sap.ui.define(
             this._fetchData();
             this._determineRegistrationStatusStyle();
 
-            timerId = setTimeout(tick.bind(this), 5000);
+            timerId = setTimeout(tick.bind(this), 5 * 60 * 1000 /* 5 minute intervall */);
           }.bind(this),
-          5000
+          60000 /* 5 minute intervall */
         );
       },
 
       handleRefreshPress: function(oEvent) {
         this._fetchData();
+        this._determineRegistrationStatusStyle();
       },
 
       _determineRegistrationStatusStyle: function() {
