@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  ui5con-open-registration-watcher:
+    image: nlsltz/ui5con-open-registration-watcher
+    build: .
+    environment:
+      NODE_ENV: production
+    env_file:
+      ./.env
+    ports:
+      - 3000:3000
