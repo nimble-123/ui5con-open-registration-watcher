@@ -1,0 +1,40 @@
+<mvc:View
+	controllerName="io.nlsltz.ui5con.watcher.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form">
+	<App>
+		<Page enableScrolling="true" title="UI5con 2018 Open Registration Watcher" titleLevel="H2" showFooter="false">
+			<content>
+				<VBox class="sapUiSmallMargin">
+                    <f:SimpleForm id="simpleForm"
+                        editable="false"
+                        layout="ResponsiveGridLayout"
+                        title="Registration Status"
+                        labelSpanXL="4"
+                        labelSpanL="3"
+                        labelSpanM="4"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="0"
+                        emptySpanL="4"
+                        emptySpanM="0"
+                        emptySpanS="0"
+                        columnsXL="2"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <f:content>
+                            <Label text="Status" />
+                            <Text id="statusText" text="{ path: '/registrationStatus' }" />
+                            <Label text="Timestamp" />
+                            <Text id="timestampText" text="{ path: '/timestamp', formatter: '.epochToDate' }" />
+                        </f:content>
+                    </f:SimpleForm>
+                    <Button id="refreshButton" text="Manual Refresh" press="handleRefreshPress" />
+                    <Image id="ui5conLogo" width="300px" src="http://openui5.org/ui5con/ebd3caeffacf9106b0b4d9f7ff31d6be.png" />
+                </VBox>
+			</content>
+		</Page>
+	</App>
+</mvc:View>
