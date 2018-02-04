@@ -33,7 +33,7 @@ yarn start
 
 ### Run as Docker Container
 
-Start the service through `docker-compose` or build the image by your own and run it. Make sure you have set up the `.env` file before you run the service whether through `docker-compose` or by plain the `docker` command.
+Start the service through `docker-compose` or build the image by your own and run it. Make sure you have set up the `.env` file before you run the service whether through `docker-compose` or by the plain `docker` command.
 
 ```sh
 docker-compose up
