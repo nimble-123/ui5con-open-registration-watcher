@@ -1,28 +1,12 @@
-require('dotenv').config();
 const debug = require('debug')('ui5con-open-reg-watcher');
 const Crawler = require('crawler');
 
 const express = require('express');
 const app = express();
 
-if (process.env.MAX_CONNECTIONS === undefined) {
-  debug('Environment variable for MAX_CONNECTIONS not set. Please set in .env file and try again!');
-  process.exit(1);
-}
-
-if (process.env.RATE_LIMIT === undefined) {
-  debug('Environment variable for RATE_LIMIT not set. Please set in .env file and try again!');
-  process.exit(1);
-}
-
-if (process.env.SITE_TO_CRAWL === undefined) {
-  debug('Environment variable for SITE_TO_CRAWL not set. Please set in .env file and try again!');
-  process.exit(1);
-}
-
-const iMaxConnections = process.env.MAX_CONNECTIONS;
-const iRateLimit = process.env.RATE_LIMIT;
-const sSiteToCrawl = process.env.SITE_TO_CRAWL;
+const iMaxConnections = 10;
+const iRateLimit = 1000;
+const sSiteToCrawl = "http://openui5.org/ui5con/index.html";
 
 const crawl = new Crawler({
   maxConnections: iMaxConnections,

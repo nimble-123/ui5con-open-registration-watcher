@@ -11,12 +11,6 @@ git clone git@github.com:nlsltz/ui5con-open-registration-watcher.git
 cd ui5con-open-registration-watcher
 ```
 
-Create your `.env` file from the example and edit to your preferences
-
-```sh
-cp .env.example .env
-```
-
 ### Build and start from source
 
 Install dependencies (i am using `yarn` instead of `npm`)
@@ -33,7 +27,7 @@ yarn start
 
 ### Run as Docker Container
 
-Start the service through `docker-compose` or build the image by your own and run it. Make sure you have set up the `.env` file before you run the service whether through `docker-compose` or by the plain `docker` command.
+Start the service through `docker-compose` or build the image by your own and run it.
 
 ```sh
 docker-compose up
@@ -41,7 +35,7 @@ docker-compose up
 
 ```sh
 docker build -t ui5con-open-registration-watcher .
-docker run --env-file ./.env -p 3000:3000 -d ui5con-open-registration-watcher
+docker run -p 3000:3000 -d ui5con-open-registration-watcher
 ```
 
 ### Access the web application
